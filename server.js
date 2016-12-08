@@ -85,7 +85,7 @@ app.post("/api/response", (req, res) => {
 });
 
 
-//Catch all non-defined GE requests
+//Catch all non-defined GET requests
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, '/views/index.html'))
 })
